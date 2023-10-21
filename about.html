@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando's Portfolio</title>
+    <div class="links">
+        <link rel="icon" type="image/x-icon" href="pfp.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--This is for the font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--This one is also for the font-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--This one is also also for the font-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--This one for the hamburber menu-->
+    </div>
+</head>
+<header>
+    <h1> Orlando Jonathan Padiman</h1>
+    <h3> 2702337615 - L1BC</h3>
+</header>
+<hr />
+        <div class="topnav" id="myTopnav"> <!--The Clickable Menu Buttons-->
+            <a href="index.html"> HOME </a>
+            <a class="active"> ABOUT ME </a>
+            <a href="education.html"> EDUCATION  </a>
+            <a href="skills.html" > PROGRAMMING SKILLS </a>
+            <a href="socmed.html"> SOCIAL MEDIA </a>
+            <a href="javascript:void(0);" class="icon" onclick="onCLick()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+<body>
+    <div class="container">
+        <div class="container2">
+            <div id="about-me">
+                <img src="aboutme.png" alt="About Me" title="About Me" height="260px" style="float:right; padding:10px;">
+                <h2>
+                    About Me:
+                </h2><br>
+                <p> Full Name: Orlando Jonathan Padiman<br>
+                    Gender: <br>
+                        <input type="radio" name="gender" id="Male"> <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female"> <label for="Female">Female</label><br>
+                    Birthday: 5 April 2005 (Age: 18)<br><br>
+                    Hobbies and Interests:
+                <ul>
+                    <li>Music</li>
+                    <li>Guitar</li>
+                    <li>Computer Games</li>
+                    <li>Programming</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onClcik() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+</body>
+</html>

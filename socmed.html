@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando's Portfolio</title>
+    <div class="links">
+        <link rel="icon" type="image/x-icon" href="pfp.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--This is for the font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--This one is also for the font-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!--This one is also also for the font-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--This one for the hamburber menu-->
+    </div>
+</head>
+<header>
+    <h1> Orlando Jonathan Padiman</h1>
+    <h3> 2702337615 - L1BC</h3>
+</header>
+<hr />
+        <div class="topnav" id="myTopnav"> <!--The Clickable Menu Buttons-->
+            <a href="index.html"> HOME </a>
+            <a href="about.html"> ABOUT ME </a>
+            <a href="education.html"> EDUCATION  </a>
+            <a href="skills.html" > PROGRAMMING SKILLS </a>
+            <a class="active"> SOCIAL MEDIA </a>
+            <a href="javascript:void(0);" class="icon" onclick="onClick()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+<body>
+    <div class="container">
+        <div class="container3">
+            <div id="socmed">
+                <h2 style="text-align: center;">
+                    Connect with Me!
+                </h2><br>
+                <p style="float: left;"> Github - orlandojpwastaken </p>
+                <p style="float: right"> Instagram - itsyaboiorlando</p>
+                <br>
+                <br>
+                <div class="logo-container">
+                    <a href="https://github.com/orlandojpwastaken">
+                        <img src="github.png" alt="Github" title="orlandojpwastaken" width=200px;>
+                    </a>
+                    <a href="https://www.instagram.com/itsyaboiorlando">
+                        <img src="insta.png" alt="Instagram" title="itsyaboiorlando" width=200px;>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onClick() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+</body>
+</html>
