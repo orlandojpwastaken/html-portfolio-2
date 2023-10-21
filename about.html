@@ -24,7 +24,7 @@
             <a href="education.html"> EDUCATION  </a>
             <a href="skills.html" > PROGRAMMING SKILLS </a>
             <a href="socmed.html"> SOCIAL MEDIA </a>
-            <a href="javascript:void(0);" class="icon" onclick="onCLick()">
+            <a href="javascript:void(0);" class="icon" onclick="onClick()">
                 <i class="fa fa-bars"></i>
               </a>
         </div>
@@ -37,9 +37,7 @@
                     About Me:
                 </h2><br>
                 <p> Full Name: Orlando Jonathan Padiman<br>
-                    Gender: <br>
-                        <input type="radio" name="gender" id="Male"> <label for="Male">Male</label>
-                        <input type="radio" name="gender" id="Female"> <label for="Female">Female</label><br>
+                    Gender:<input type="radio" disabled checked> Male <input type="radio" disabled>Female<br>
                     Birthday: 5 April 2005 (Age: 18)<br><br>
                     Hobbies and Interests:
                 <ul>
@@ -50,10 +48,9 @@
                 </ul>
                 </p>
             </div>
-        </div>
     </div>
     <script>
-        function onClcik() {
+        function onClick() {
           var x = document.getElementById("myTopnav");
           if (x.className === "topnav") {
             x.className += " responsive";
